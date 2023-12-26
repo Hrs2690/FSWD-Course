@@ -1,0 +1,44 @@
+.box{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ball{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.ball:hover{
+    animation: moveTheBall 1s ease-in-out forwards ;
+}
+ 
+@keyframes moveTheBall {
+    25%{
+        transform: rotate(90deg);
+        /* transform: rotate(0.25turn); */
+        /* transform-origin: 50%, 70%; */  /* THIS FUNCTION IS NOT WORKING IN MY PC I GUESS*/
+        /* transform: rotateX(90deg);
+        transform: rotateZ(90deg);
+        transform: rotateY(90deg); */
+        border-radius: 10%;
+    }
+    50%{
+        transform: translate(300%,300%);
+        background-color: aqua;
+        border-radius: 25%;
+    }
+    75%{
+        /* transform: translate(0,300%);
+        background-color: crimson; */
+        transform: scale(1.15);
+        /* transform: scale3d(2); */     /* THIS FUNCTION IS NOT WORKING IN MY PC I GUESS*/
+        border-radius: 50%;
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+

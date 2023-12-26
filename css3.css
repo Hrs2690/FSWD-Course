@@ -1,0 +1,82 @@
+
+/* Static */
+/*      >> Its by default
+        >> it will only occupy empty space no collision with others */
+
+/* div{
+    background-color: blue;
+    color: aqua;
+    border: 2px solid red;
+    position: static;
+} */
+
+/* Relative */
+/*      >> Its relative to its original position 
+        >>  Offset (Top, Right, Bottom, Left)*/
+
+/* div{
+    background-color: rgb(16, 16, 118);
+    color: aqua; 
+    border: 2px solid rgb(179, 116, 116);
+    position: relative;
+    top: 20px;
+    left: 30px;
+    bottom: 100px;
+    right: 10px;
+} */
+
+/* Fixed */
+/*      >> Here the highlighted section will be            fixed at specified position even after scrolling */
+
+/* div{
+    background-color: rgb(16, 16, 118);
+    color: aqua;
+    border: 2px solid rgb(179, 116, 116);
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    bottom: 100px;
+    right: 10px;
+} */
+
+/* Absolute */
+/*      >> It should always have a parent 
+        >> The Parent should be of position- relative
+        >>the offset values are wrt the parent not wrt entire UI
+        >> If we dont have any parent for position absolute
+        >> Then by default it considers body as a parent
+        >> and body exactly acts as relative in nature*/
+/* 
+.parent{
+    position: relative;
+    background-color: aquamarine;
+    border: 2px dotted black;
+    height: 1000px;
+    width: 500px;
+}
+
+.child{
+    background-color: rgb(16, 16, 118);
+    color: aqua;
+    border: 2px solid rgb(179, 116, 116);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    bottom: 0px;
+    right: 10px;
+} */
+
+/* Sticky */
+/*    >> it will be scrolled to a certain extent then it gets fixed at that position  */
+
+.child{
+    background-color: rgb(16, 16, 118);
+    color: aqua;
+    border: 2px solid rgb(179, 116, 116);
+    position: sticky;
+    /* top: 79px; */
+    /* left: 3px; */
+    /* bottom: 200px; */
+    /* right: 10px; */
+}
+

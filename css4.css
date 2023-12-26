@@ -1,0 +1,118 @@
+/* Hover >> Pointing the cursor on button */
+
+button:hover{
+    background-color: aqua;
+    color: blue;
+    cursor: pointer;
+}
+
+/* Active >> When we hold left key of mouse it will be in active state */
+
+button:active{
+    border: 3px solid red;
+}
+
+/* Focus >> Indicating we already visited the button */
+ 
+button:focus{
+    border: 3px solid rgb(0, 255, 208);
+    background-color: bisque;
+}
+
+/* Doing samething with anchor tag or link */
+/* a{ */
+    /* color: darkgoldenrod;    */
+    /* I am not getting the initial color for sometimes and even not getting visited links many times????????????????
+                               */
+/* } */
+
+/* a:visited{
+    color: rgb(12, 243, 0);
+}
+
+a:active{
+    color: rgb(36, 6, 135);
+} */
+
+span{
+    padding: 0px;
+    margin: 20px;
+    background-color: yellow;
+}
+
+/* First Child */
+span:first-child{
+    background-color: blueviolet;
+}
+
+/* Last Child */
+span:last-child{
+    background-color: rgb(67, 226, 43);
+}
+
+/* For nth child */
+/* span:nth-child(8){
+    background-color: red;
+} */
+
+/* For even child */
+/* span:nth-child(even){
+    background-color: rgb(0, 200, 255);
+} */
+
+/* For even child */
+/* span:nth-child(2n){
+    background-color: rgb(0, 200, 255);
+} */
+
+/* For some fixed child */
+/* span:nth-child(4n+1){
+    background-color: rgb(0, 255, 4);
+} */
+
+/* Pseudo Elements: Before */
+/* h3::before{
+    content: "Hello ";
+    background-color: aquamarine;
+} */
+
+/* Pseudo Elements: After */
+/* h3::after{
+    content: " Good Morning";
+} */
+
+.shape{
+    margin: 100px;
+    background-color: coral;
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    border-radius: 100%;
+    position: relative;
+}
+
+.shape::before{
+    content: " ";
+    background-color: greenyellow;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 100%;
+    top: 0px;
+    /* left: 10px; */
+    left: 0px;
+}
+
+.shape::after{
+    content: " ";
+    background-color: greenyellow;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 0px;
+    /* left: 10px; */
+    right: 0px;
+}
+
+

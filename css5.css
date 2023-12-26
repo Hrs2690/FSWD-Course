@@ -1,0 +1,60 @@
+.parent{
+    /* height: 1000px; */
+    background-color: darkslategrey;
+    display: flex;
+    /* height: 100px;
+    width: 100px; */
+    /* row, row-reverse, column, column-reverse */
+    flex-direction: row;
+    gap: 10px;
+    /*row- flex-start, flex-end, center, space-around, space-between, space-evenly */
+    justify-content: flex-start;
+    /*column- flex-start, flex-end, center, stretch,  */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    /* flex: 1; */
+    text-align: center;
+    background-color: chartreuse;
+    border: 2px solid blue;
+    border-radius: 50%;
+    /* margin: 10px; */
+}
+
+/* Animations */
+button{
+    background-color: black;
+    color: aquamarine;
+    margin: 40px;
+    padding: 40px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    /* Transitions Properties */
+    /* transition-delay: 200ms; */
+    /* transition-duration: 100ms; */
+    /* transition-property: background-color color; */
+    /* transition-property: color; */
+    /* linear, ease-in, ease-out, ease-in-out */
+    /* transition-timing-function: cubic-bezier(0,-0.73, 0, 1.15); */
+
+    transition: all cubic-bezier(0,-0.73, 0, 1.15) 250ms 500ms;
+    
+    /* I AM NOT ABLE TO GET THE DESIRED OUTPUT FOR TRANSITION FUNCTIONS SO I HAVE TO TRY IT AGAIN */
+}
+
+button:hover{
+    
+    border: 2px solid rgb(0, 225, 255);
+}
+
+button:active{
+    background-color: azure;
+    color: black;
+    border: 2px solid black;
+}

@@ -1,0 +1,20 @@
+span{
+    background-color: rgb(188, 20, 20);
+    background-image: url(https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1);
+    /* background-image: url(images.jpeg); */
+    b
+    color: aqua;
+    border: 0px solid blue;
+    border-radius: 20%;
+    font-size: 100px;
+
+}
+
+/* CSS Selectors
+1) Universal Selector (*)
+2) ID Selector (#)
+3) Class Selector (.)
+4) Element Selector
+5) Selector List
+6) Descendant Selector
+7) Direct Child Selector */
